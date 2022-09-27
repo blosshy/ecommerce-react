@@ -1,0 +1,13 @@
+.logo-navbar{
+    width: 25rem;
+    height: 7rem;
+}
+
+.navbar-estilos{
+    background-color: lightpink;
+}
+
+.link-nav{
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+}
