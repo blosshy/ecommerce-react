@@ -17,10 +17,10 @@ const NavbarBs = () =>{
                     />
                 </Navbar.Brand>
                 <Nav>
-                    <Nav.Link href="#home" className="link-nav">Inicio</Nav.Link>
-                    <Nav.Link href="#clothes" className="link-nav">Ropa</Nav.Link>
-                    <Nav.Link href="#toys" className="link-nav">Peluches</Nav.Link>
-                    <Nav.Link href="#accesories" className="link-nav">Accesorios</Nav.Link>
+                    <Nav.Link href="#home" className="link-nav fs-5">Inicio</Nav.Link>
+                    <Nav.Link href="#clothes" className="link-nav fs-5">Ropa</Nav.Link>
+                    <Nav.Link href="#toys" className="link-nav fs-5">Peluches</Nav.Link>
+                    <Nav.Link href="#accesories" className="link-nav fs-5">Accesorios</Nav.Link>
                 </Nav>
                 <CartWidget/>
             </Container>
