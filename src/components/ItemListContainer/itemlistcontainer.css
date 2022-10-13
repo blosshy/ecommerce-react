@@ -1,4 +1,19 @@
-.titulo{
-    margin-top: 1rem;
-    color: rgb(247, 148, 163);
+.load-container{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.loader{
+    font-size: 3rem;
+    color: rgb(133, 66, 18);
+}
+
+.productos{
+    font-size: 4rem;
+    color: rgb(240, 90, 113);
+    margin: 1rem;
 }

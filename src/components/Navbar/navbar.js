@@ -1,31 +1,34 @@
-import './navbar.css'
+import './navbar.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from './assets/logo.png';
 import CartWidget from '../CartWidget/cartwidget.js';
+import { Link } from "react-router-dom";
 
 const NavbarBs = () =>{
     return(
         <Navbar className="navbar-estilos">
             <Container className="d-flex justify-content-around">
-                <Navbar.Brand href="#home">
+                <Navbar.Brand>
+                <Link to='/'>
                     <img
                         src= {logo}
                         className="logo-navbar"
                         alt="Sanrio logo"
                     />
+                </Link>
                 </Navbar.Brand>
                 <Nav>
-                    <Nav.Link href="#home" className="link-nav fs-5">Inicio</Nav.Link>
-                    <Nav.Link href="#clothes" className="link-nav fs-5">Ropa</Nav.Link>
-                    <Nav.Link href="#toys" className="link-nav fs-5">Peluches</Nav.Link>
-                    <Nav.Link href="#accesories" className="link-nav fs-5">Accesorios</Nav.Link>
+                    <Nav.Link><Link to='/' className="link-nav">Inicio</Link></Nav.Link>
+                    <Nav.Link><Link to='/category/ropa' className="link-nav">Ropa</Link></Nav.Link>
+                    <Nav.Link><Link to='/category/peluche' className="link-nav">Peluches</Link></Nav.Link>
+                    <Nav.Link><Link to='/category/accesorios' className="link-nav">Accesorios</Link></Nav.Link>
                 </Nav>
                 <CartWidget/>
             </Container>
         </Navbar>
     )
-} 
+};
 
 export default NavbarBs;

@@ -10,4 +10,11 @@
 .link-nav{
     margin-left: 1rem;
     margin-right: 0.5rem;
+    text-decoration: none;
+    color: rgb(202, 81, 99);
+    font-size: 1.5rem;
+}
+
+.link-nav:hover{
+    color: rgb(255, 91, 118);
 }

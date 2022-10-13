@@ -1,0 +1,22 @@
+.cards{
+    border: 5px solid rgb(248, 104, 128);
+    border-radius: 1rem;
+    margin: 3rem;
+    padding-bottom: 1rem;
+}
+
+.nombre{
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: rgb(248, 70, 159);
+}
+
+.precio{
+    font-weight: 900;
+}
+
+.detalle{
+    font-size: 1rem;
+    text-decoration: underline;
+    color: rgb(202, 66, 89);
+}

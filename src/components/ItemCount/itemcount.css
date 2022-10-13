@@ -1,0 +1,18 @@
+.contador{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.botonContador, .cantidad{
+    margin: 10px;
+}
+
+.botonCarrito{
+    margin: 10px;
+    border-top: 1px solid black;
+}
+
+.botonContador{
+    border: none;
+}
