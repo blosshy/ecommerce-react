@@ -22,7 +22,7 @@ const NavbarBs = () =>{
                 <Nav>
                     <Nav.Link><Link to='/' className="link-nav">Inicio</Link></Nav.Link>
                     <Nav.Link><Link to='/category/ropa' className="link-nav">Ropa</Link></Nav.Link>
-                    <Nav.Link><Link to='/category/peluche' className="link-nav">Peluches</Link></Nav.Link>
+                    <Nav.Link><Link to='/category/peluches' className="link-nav">Peluches</Link></Nav.Link>
                     <Nav.Link><Link to='/category/accesorios' className="link-nav">Accesorios</Link></Nav.Link>
                 </Nav>
                 <CartWidget/>

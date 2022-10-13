@@ -3,7 +3,7 @@ const products =  [
         id: '1', 
         name: 'Peluche Kuromi', 
         price: 2000, 
-        category: 'peluche', 
+        category: 'peluches', 
         img:'../images/kuromi-plush.jpg', 
         stock: 5, 
         description:'Suave y tierno, este peluche tiene una altura increíble de 17", lo que lo convierte en el regalo perfecto para los súper fanáticos de Hello Kitty y la pieza central de cualquier colección de Hello Kitty. Tiene una textura liviana y peluda y está terminado con detalles de resina para la cara.'
@@ -12,7 +12,7 @@ const products =  [
         id: '2', 
         name: 'Peluche Melody', 
         price: 2000, 
-        category: 'peluche', 
+        category: 'peluches', 
         img:'../images/melody-plush.jpg', 
         stock: 5, 
         description:'Suave y tierno, este peluche tiene una altura increíble de 17", lo que lo convierte en el regalo perfecto para los súper fanáticos de Hello Kitty y la pieza central de cualquier colección de Hello Kitty. Tiene una textura liviana y peluda y está terminado con detalles de resina para la cara.'

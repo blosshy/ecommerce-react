@@ -4,12 +4,14 @@
     justify-items: center;
     align-items: center;
     width: 100%;
-    margin-top: 5rem;
+    background-color: rgba(253, 253, 146, 0.795);
+    padding-bottom: 11rem;
 }
 
 .loader{
     font-size: 3rem;
     color: rgb(133, 66, 18);
+    margin-top: 5rem;
 }
 
 .productos{
