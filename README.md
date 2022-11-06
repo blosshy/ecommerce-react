@@ -6,9 +6,9 @@ This website is powered by ReactJs, Javascript, HTML5, CSS, Firebase, Bootstrap 
 Install the dependencies and devDependencies and start the server.
 ---Follow the instructions--- 
 
-1.- git clone 
+1.- git clone https://github.com/blosshy/ecommerce-react.git
 
-2.- cd 
+2.- cd ecommerce-react
 
 3.- npm install | yarn 
 
@@ -18,7 +18,7 @@ Install the dependencies and devDependencies and start the server.
 
 ## Firebase
 
-Utilize this scheme of environment variables in the proyect:
+Utilize this scheme of environment variables in the project:
 
 -REACT_APP_apiKey=
 
@@ -33,9 +33,13 @@ Utilize this scheme of environment variables in the proyect:
 -REACT_APP_appId=
 
 ## Deployment Link
- 
- 
- ## Google Drive Link
- 
- 
- Developed by Matias Martinez, Full Stack Web Developer student on October - 2022
+
+https://ecommerce-react-blosshy.vercel.app/
+
+## Google Drive Link 
+
+A short demo of the site:
+
+https://drive.google.com/file/d/1E0-fjmc6ZdAx4Rk9C3bJaB4m4H8RHjVk/view?usp=share_link
+
+Developed by Matias Martinez, Full Stack Web Developer student on October - 2022
