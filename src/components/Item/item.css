@@ -20,3 +20,7 @@
     text-decoration: underline;
     color: rgb(202, 66, 89);
 }
+
+.detalle:hover{
+    color: rgb(231, 146, 220);
+}

@@ -1,9 +1,10 @@
 import './itemdetailcontainer.css';
-import { getProductById } from '../../asyncMock';
 import { useState, useEffect } from "react";
 import ItemDetail from '../ItemDetail/itemdetail.js';
 import { useParams } from "react-router-dom";
 import gif from './assets/loading.gif';
+import { getDoc,doc } from 'firebase/firestore';
+import { db } from '../../services/firebase';
 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState([]);
@@ -12,9 +13,14 @@ const ItemDetailContainer = () => {
     const {productId} = useParams();
 
     useEffect(() => {
-        getProductById(productId)
+        const docRef = doc(db,'products',productId);
+
+        getDoc(docRef)
         .then((response) => {
-            setProduct(response);
+            const data = response.data();
+            const productAdapted = {id: response.id, ...data};
+
+            setProduct(productAdapted);
         })
         .finally(() => {
             setLoading(false);
@@ -29,7 +35,7 @@ const ItemDetailContainer = () => {
             <img src={gif} alt='Sanrio Pompompurin loader'></img>
         </div>
         );
-    }
+    };
 
     return (
         <div>

@@ -9,3 +9,8 @@
     padding: 8px;
     background-color: rgb(230, 129, 144);
 }
+
+.number{
+    text-decoration: none;
+    color: black;
+}

@@ -17,3 +17,32 @@
     font-size: larger;
     font-weight: 700;
 }
+
+
+.link{
+    color: lightpink;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 1rem;
+    background-color:  rgb(223, 71, 94);
+}
+
+.link:hover{
+    color: white;
+}
+
+.links-detail{
+    color: lightpink;
+    text-decoration: none;
+    padding: 8px;
+    margin: 1rem;
+    background-color:  rgb(223, 71, 94);
+}
+
+.links-detail:hover{
+    color: white;
+}
+
+.buttons-detail{
+    margin: 1rem;
+}

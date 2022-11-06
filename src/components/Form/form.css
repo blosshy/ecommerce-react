@@ -1,0 +1,25 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-label{
+    font-size: 18px;
+    margin: 10px;
+    color: rgb(230, 111, 128);
+    font-weight: 700;
+}
+
+.form-container{
+    background-color: pink;
+}
+
+.form-input{
+    margin: 5px;
+}
+
+.submit{
+    margin: 18px;
+}

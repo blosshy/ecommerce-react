@@ -1,9 +1,10 @@
 import './itemlistcontainer.css';
 import gif from './assets/loading.gif';
-import { getProducts, getProductsByCategory } from '../../asyncMock.js';
 import { useState, useEffect } from 'react';
 import ItemList from '../ItemList/itemlist.js';
 import { useParams } from "react-router-dom";
+import { getDocs, collection,query,where } from 'firebase/firestore';
+import { db } from '../../services/firebase';
 
 const ItemListContainer = () => {
     
@@ -15,11 +16,18 @@ const ItemListContainer = () => {
     useEffect(() => {
         setLoading(true);
 
-        const asyncFunction = categoryId ? getProductsByCategory : getProducts;
+        const collectionRef = categoryId
+        ? query(collection(db,'products'), where('category','==',categoryId))
+        : collection(db,'products');
 
-        asyncFunction(categoryId)
+        getDocs(collectionRef)
         .then((response) => {
-            setProducts(response);
+            const productsAdapted = response.docs.map(doc =>{
+                const data = doc.data()
+                return {id: doc.id, ...data}
+            });
+
+            setProducts(productsAdapted);
         })
         .finally(() => {
             setLoading(false);
@@ -33,7 +41,7 @@ const ItemListContainer = () => {
             <img src={gif} alt='Sanrio Pompompurin loader'></img>
         </div>
         )
-    }
+    };
 
     return(
         <div>
@@ -41,6 +49,6 @@ const ItemListContainer = () => {
             <ItemList products={products}/>
         </div>
     )
-}
+};
 
 export default ItemListContainer;
