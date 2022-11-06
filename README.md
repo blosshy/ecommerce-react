@@ -1,5 +1,5 @@
 # Matias Martinez 
-## Proyecto E-Commerce - Sanrio Store Argentina
+## Project E-Commerce - Sanrio Store Argentina
 This website is powered by ReactJs, Javascript, HTML5, CSS, Firebase, Bootstrap and SweetAlert2.
 
 ## Installation
